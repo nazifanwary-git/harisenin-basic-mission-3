@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>VideoBelajar | Daftar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buat akun VideoBelajar untuk mulai menikmati konten edukasi terkini">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/assets/logoVideoBelajar.png" alt="Logo VideoBelajar">
+        </nav>
+    </header>
+    <main>
+        <div class="registerContainer">
+            <div class="registerHeader">
+                <h3>Pendaftaran Akun</h3>
+                <p>Yuk daftarkan akunmu sekarang juga!</p>
+            </div>
+            <div class="registerForms">
+                <form action="#">
+                    <label for="fullname">Nama Lengkap<span class="asterisk">*</span></label>
+                    <input type="text" name="fullname" required>
+                    <label for="email">E-mail<span class="asterisk">*</span></label>
+                    <input type="email" name="email" required>
+                    <label for="phoneNumber">No. Hp<span class="asterisk">*</span></label>
+                    <div class="phoneWrapper">
+                        <div class="regionWrapper">
+                            <label class="flag" for="phoneRegion">Phone Region</label>
+                            <div class="flagBox">
+                                <img src="/assets/Indonesia (ID).png" alt="Indonesia Flag">
+                            </div>
+                            <select name="phoneRegion" id="phoneRegion">
+                                <option value="Indonesia" selected>+62</option>
+                            </select>
+                        </div>
+                        <input type="tel" name="phoneNumber" required>
+                    </div>
+                    <label for="password">Kata Sandi<span class="asterisk">*</span></label>
+                    <div class="passwordWrapper">
+                        <input class="passwordForm" type="password" name="password" required>
+                        <img src="/assets/mdi_eye-off.png" alt="password visibility icon">
+                    </div>
+                    <label for="rePassword">Kata Sandi<span class="asterisk">*</span></label>
+                    <div class="rePasswordWrapper">
+                        <input class="rePasswordForm" type="password" name="rePassword" required>
+                        <img src="/assets/mdi_eye-off.png" alt="password visibility icon">
+                    </div>
+                </form>
+                <a href="#">Lupa Password?</a>
+            </div>
+            <div class="registerButtons">
+                <button class="bttn-masuk">Masuk</button>
+                <button class="bttn-daftar">Daftar</button>
+                <div class="divContainer">
+                    <span class="divider">atau</span>
+                </div>
+                <button class="bttn-gmail">
+                    <img src="/assets/logos_google-icon.png" alt="Gmail Logo"><span>Masuk dengan Google</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -26,7 +26,7 @@ nav {
     object-fit: contain;
 }
 
-.loginContainer {
+.registerContainer {
     background-color: #fff;
     width: 590px;
     margin: 163.5px auto 0 auto;
@@ -34,7 +34,7 @@ nav {
     border-radius: 4px;
 }
 
-.loginHeader {
+.registerHeader {
     width: 100%;
     text-align: center;
     margin-bottom: 36px;
@@ -50,15 +50,21 @@ p {
     color: #333333AD;
 }
 
-.loginInputs {
+.registerForms {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
-label {
-    display: inline-block;
+.registerForms form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-bottom: 16px;
+}
+
+form>label {
     font-size: 1.6rem;
     margin-bottom: 4px;
 }
@@ -67,13 +73,66 @@ label {
     color: red;
 }
 
-.emailForm {
+form>input {
     display: inline-block;
     width: 100%;
     font-size: 1.6rem;
     margin-bottom: 16px;
-    padding: 4px;
+    padding: 6px;
     border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.flag {
+    display: none;
+}
+
+.phoneWrapper {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.regionWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.flagBox {
+    background-color: #F4F5FA;
+    padding: 6px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flagBox img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.regionWrapper select {
+    background: transparent;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.phoneWrapper input {
+    flex: 1;
+    border: 1px solid #f1f1f1;
+    font-size: 1.6rem;
+    margin-left: 24px;
+    padding: 8px;
     border-radius: 8px;
 }
 
@@ -87,12 +146,35 @@ label {
 .passwordForm {
     width: 100%;
     font-size: 1.6rem;
-    padding: 4px 40px 4px 0px;
+    padding: 6px 40px 6px 0px;
     border: 1px solid #f1f1f1;
     border-radius: 8px;
 }
 
 .passwordWrapper img {
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.rePasswordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.rePasswordForm {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 6px 40px 6px 0px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.rePasswordWrapper img {
     position: absolute;
     right: 12px;
     width: 24px;
@@ -118,7 +200,7 @@ a:active {
     color: #141518;
 }
 
-.loginButtons {
+.registerButtons {
     display: flex;
     flex-direction: column;
     align-items: center;
