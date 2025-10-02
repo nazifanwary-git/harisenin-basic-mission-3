@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FFFDF3;
+}
+
+nav {
+    display: flex;
+    height: 5rem;
+    background-color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.logo {
+    padding: 13px 22px;
+    object-fit: contain;
+}
+
+.loginContainer {
+    background-color: #fff;
+    width: 590px;
+    margin: 163.5px auto 0 auto;
+    padding: 36px;
+}
+
+.loginHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+h3 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #333333AD;
+}
+
+.loginInputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.asterisk {
+    color: red;
+}
+
+.emailForm {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    padding: 4px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.passwordForm {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 4px 40px 4px 0px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.passwordWrapper img {
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: right;
+    text-decoration: none;
+    color: #4A505C;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+a:hover {
+    color: #7d89a1;
+}
+
+a:active {
+    color: #141518;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 16px;
+}
+
+:is(button) {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 26px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.bttn-masuk {
+    background-color: #3ECF4C;
+    color: #FFFF;
+    border: 1px solid #3ECF4C;
+}
+
+.bttn-masuk:hover {
+    background-color: #42ee53;
+}
+
+.bttn-masuk:active {
+    background-color: #3ECF4C;
+}
+
+.bttn-daftar {
+    background-color: #E2FCD9CC;
+    color: #3ECF4C;
+    border: 1px solid #E2FCD9CC;
+}
+
+.bttn-daftar:hover {
+    background-color: #b9f9a4cc;
+}
+
+.bttn-daftar:active {
+    background-color: #E2FCD9CC;
+}
+
+.divContainer {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    color: #4A505C;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    background-color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    margin-right: 1rem;
+}
+
+.divider::after {
+    margin-left: 1rem;
+}
+
+.bttn-gmail {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #4A505C;
+    border: 1px solid #F1F1F1;
+}
+
+.bttn-gmail:hover {
+    background-color: #c3c3c3;
+}
+
+.bttn-gmail:active {
+    background-color: #FFFFFF;
+}
