@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,104 +9,142 @@
 
 html {
     font-size: 62.5%;
+    font-family: "lato", sans-serif;
 }
 
 body {
+    width: 360px;
     background-color: #FFFDF3;
 }
 
 nav {
     display: flex;
-    height: 5rem;
-    background-color: #fff;
-    justify-content: flex-start;
     align-items: center;
-    padding-left: 120px;
+    background-color: #FFFFFF;
+    width: 100%;
 }
 
-.logo {
-    padding: 13px 22px;
+.logo img {
+    width: 144.77px;
+    height: 22.56px;
     object-fit: contain;
 }
 
-.registerContainer {
-    background-color: #fff;
-    width: 590px;
-    margin: 163.5px auto 0 auto;
-    padding: 36px;
-    border-radius: 4px;
+.logo {
+    margin: 16px auto 16px 24px;
 }
 
-.registerHeader {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-h3 {
-    font-size: 3.2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.6rem;
-    color: #333333AD;
-}
-
-.registerForms {
+main {
+    width: 320px;
+    background-color: #FFFFFF;
+    margin: 28px auto 0 auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.registerForms form {
+.registerHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin: 20px;
+}
+
+.registerHeader h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #222325;
+    margin-bottom: 10px;
+}
+
+.registerHeader p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+}
+
+.registerInputs {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 16px;
-}
-
-form>label {
-    font-size: 1.6rem;
-    margin-bottom: 4px;
-}
-
-.asterisk {
-    color: red;
-}
-
-form>input {
-    display: inline-block;
-    width: 100%;
-    font-size: 1.6rem;
-    margin-bottom: 16px;
-    padding: 6px;
-    border: 1px solid #f1f1f1;
-    border-radius: 8px;
 }
 
 .flag {
     display: none;
 }
 
+.labelContainer {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.asterisk {
+    color: red;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+    padding: 4px 10px;
+    border: 1px solid #3A35411F;
+    border-radius: 4px;
+}
+
+.genderSelect {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    font-size: 1.6rem;
+    padding: 4px 10px;
+    border: 1px solid #3A35411F;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
 .phoneWrapper {
     display: flex;
     width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 4px;
     margin-bottom: 16px;
+    overflow: hidden;
 }
 
 .regionWrapper {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #f1f1f1;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #3A35411F;
+    border-radius: 4px;
 }
 
 .flagBox {
+    width: 44px;
+    height: 48px;
     background-color: #F4F5FA;
     padding: 6px 4px;
     display: flex;
@@ -117,21 +158,24 @@ form>input {
     display: block;
 }
 
-.regionWrapper select {
-    background: transparent;
+.regionSelect {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
     font-size: 1.6rem;
+    padding: 0;
     border: none;
-    outline: none;
-    padding: 8px;
     cursor: pointer;
-    border-radius: 8px;
 }
 
 .phoneWrapper input {
     flex: 1;
+    height: 48px;
     border: 1px solid #f1f1f1;
     font-size: 1.6rem;
     margin-left: 24px;
+    margin-bottom: 0;
     padding: 8px;
     border-radius: 8px;
 }
@@ -140,43 +184,12 @@ form>input {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
-}
-
-.passwordForm {
-    width: 100%;
-    font-size: 1.6rem;
-    padding: 6px 40px 6px 0px;
-    border: 1px solid #f1f1f1;
-    border-radius: 8px;
 }
 
 .passwordWrapper img {
     position: absolute;
     right: 12px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.rePasswordWrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.rePasswordForm {
-    width: 100%;
-    font-size: 1.6rem;
-    padding: 6px 40px 6px 0px;
-    border: 1px solid #f1f1f1;
-    border-radius: 8px;
-}
-
-.rePasswordWrapper img {
-    position: absolute;
-    right: 12px;
+    top: 8.5px;
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -184,42 +197,51 @@ form>input {
 
 a {
     display: inline-block;
-    font-size: 1.6rem;
-    text-align: right;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: "DM Sans";
+    font-style: medium;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
     text-decoration: none;
-    color: #4A505C;
-    font-weight: bold;
-    margin-bottom: 36px;
+    text-align: right;
 }
 
 a:hover {
-    color: #7d89a1;
+    color: #aaaaaa;
 }
 
 a:active {
-    color: #141518;
+    color: #000000;
 }
 
-.registerButtons {
+.loginButtons {
     display: flex;
     flex-direction: column;
+    width: 280px;
     align-items: center;
     font-size: 1.6rem;
-    gap: 16px;
+    margin-bottom: 20px;
 }
 
 :is(button) {
     display: inline-block;
     width: 100%;
-    padding: 10px 26px;
-    font-weight: bold;
     border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    padding: 7px 0;
 }
 
 .bttn-masuk {
     background-color: #3ECF4C;
     color: #FFFF;
     border: 1px solid #3ECF4C;
+    margin-bottom: 16px;
 }
 
 .bttn-masuk:hover {
@@ -234,6 +256,7 @@ a:active {
     background-color: #E2FCD9CC;
     color: #3ECF4C;
     border: 1px solid #E2FCD9CC;
+    margin-bottom: 20px;
 }
 
 .bttn-daftar:hover {
@@ -246,18 +269,24 @@ a:active {
 
 .divContainer {
     display: flex;
-    height: 20px;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
 }
 
 .divider {
     display: flex;
     align-items: center;
-    color: #4A505C;
-    font-size: 1.6rem;
     width: 100%;
+    padding: 0 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "DM Sans";
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #4A505C;
 }
 
 .divider::before,
@@ -293,4 +322,34 @@ a:active {
 
 .bttn-gmail:active {
     background-color: #FFFFFF;
+}
+
+@media (min-width: 1440px) {
+    body {
+        width: 100vw;
+    }
+
+    .logo {
+        margin-left: 120px;
+    }
+
+    main {
+        width: 590px;
+        margin-top: 163.5px;
+    }
+
+    .registerHeader {
+        width: 518px;
+        margin: 36px;
+    }
+
+    .registerInputs {
+        width: 518px;
+        margin-bottom: 36px;
+    }
+
+    .loginButtons {
+        width: 518px;
+        margin-bottom: 36px;
+    }
 }

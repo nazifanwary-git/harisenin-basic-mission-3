@@ -12,48 +12,53 @@
 <body>
     <header>
         <nav>
-            <img src="/assets/logoVideoBelajar.png" alt="Logo VideoBelajar">
+            <img class="logo" src="/assets/logoVideoBelajar.png" alt="Logo VideoBelajar">
         </nav>
     </header>
     <main>
-        <div class="registerContainer">
+        <div class="container">
             <div class="registerHeader">
                 <h3>Pendaftaran Akun</h3>
                 <p>Yuk daftarkan akunmu sekarang juga!</p>
             </div>
-            <div class="registerForms">
+            <div class="registerInputs">
                 <form action="#">
-                    <label for="fullname">Nama Lengkap<span class="asterisk">*</span></label>
+                    <label class="labelContainer" for="fullname">Nama Lengkap<span class="asterisk">*</span></label>
                     <input type="text" name="fullname" required>
-                    <label for="email">E-mail<span class="asterisk">*</span></label>
+                    <label class="labelContainer" for="email">E-mail<span class="asterisk">*</span></label>
                     <input type="email" name="email" required>
-                    <label for="phoneNumber">No. Hp<span class="asterisk">*</span></label>
+                    <label class="labelContainer" for="gender">Jenis Kelamin<span class="asterisk">*</span></label>
+                    <select name="gender" class="genderSelect">
+                        <option value="male">Pria</option>
+                        <option value="female" selected>Wanita</option>
+                    </select>
+                    <label class="labelContainer" for="phoneNumber">No. Hp<span class="asterisk">*</span></label>
                     <div class="phoneWrapper">
                         <div class="regionWrapper">
                             <label class="flag" for="phoneRegion">Phone Region</label>
                             <div class="flagBox">
                                 <img src="/assets/Indonesia (ID).png" alt="Indonesia Flag">
                             </div>
-                            <select name="phoneRegion" id="phoneRegion">
+                            <select name="phoneRegion" class="regionSelect">
                                 <option value="Indonesia" selected>+62</option>
                             </select>
                         </div>
                         <input type="tel" name="phoneNumber" required>
                     </div>
-                    <label for="password">Kata Sandi<span class="asterisk">*</span></label>
+                    <label class="labelContainer" for="password">Kata Sandi<span class="asterisk">*</span></label>
                     <div class="passwordWrapper">
                         <input class="passwordForm" type="password" name="password" required>
                         <img src="/assets/mdi_eye-off.png" alt="password visibility icon">
                     </div>
-                    <label for="rePassword">Kata Sandi<span class="asterisk">*</span></label>
-                    <div class="rePasswordWrapper">
-                        <input class="rePasswordForm" type="password" name="rePassword" required>
+                    <label class="labelContainer" for="rePassword">Kata Sandi<span class="asterisk">*</span></label>
+                    <div class="passwordWrapper">
+                        <input class="passwordForm" type="password" name="rePassword" required>
                         <img src="/assets/mdi_eye-off.png" alt="password visibility icon">
                     </div>
                 </form>
                 <a href="#">Lupa Password?</a>
             </div>
-            <div class="registerButtons">
+            <div class="loginButtons">
                 <button class="bttn-masuk">Masuk</button>
                 <button class="bttn-daftar">Daftar</button>
                 <div class="divContainer">
