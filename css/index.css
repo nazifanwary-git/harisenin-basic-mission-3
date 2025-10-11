@@ -1,0 +1,999 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "lato", sans-serif;
+}
+
+body {
+    width: 360px;
+    background-color: #FFFDF3;
+}
+
+header {
+    width: 360px;
+    background-color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 16px auto 16px 24px;
+    width: 152px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.navMenu {
+    margin: 25px 24px 25px auto;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.navAvatar {
+    display: none;
+    width: 144px;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+.navAvatar span {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+}
+
+.navAvatar img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin: 28px auto 28px auto;
+}
+
+.heroBanner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/assets/heroBanner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.heroBanner::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000000CC;
+    border-radius: 4px;
+}
+
+.heroText {
+    position: relative;
+    z-index: 1;
+    width: 280px;
+    margin: 37px 20px 37px 20px;
+}
+
+.heroBanner h2 {
+    font-size: 2.4rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    font-style: bold;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.heroBanner p {
+    font-size: 1.34rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    font-style: medium;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.heroButton {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    background-color: #3ECF4C;
+    border: none;
+    border-radius: 8px;
+}
+
+.heroButton:hover {
+    background-color: #1fa62d;
+}
+
+.heroButton:active {
+    background-color: #3ECF4C;
+}
+
+.catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.catalogHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.catalogHeader h2 {
+    font-size: 2.4rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #222325;
+    margin-bottom: 10px;
+}
+
+.catalogHeader p {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+}
+
+.catalogFilterContainer {
+    height: 50px;
+    display: flex;
+    margin-bottom: 24px;
+    width: auto;
+}
+
+.catalogFilterSelected {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.catalogFilterSelected span {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #F64920;
+    padding-right: 36px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.catalogFilterSelected img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 52px;
+    height: 6px;
+}
+
+.catalogFilter {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+    padding-right: 36px;
+    white-space: nowrap;
+}
+
+.catalogFilter span {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+.catalogCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalogCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #3A35411F;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imageAndDescription {
+    width: 288px;
+    display: flex;
+    margin: 16px auto 8px auto;
+    gap: 12px;
+}
+
+.productImage {
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: column;
+    width: 194px;
+    gap: 8px;
+}
+
+.productName {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #222325;
+}
+
+.description {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+    display: none;
+}
+
+.teacherContainer {
+    display: flex;
+    align-items: center;
+    width: 194px;
+    gap: 8px;
+}
+
+.teacherImage {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.teacherInfo {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.teacherName {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.teacherExperience {
+    font-size: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+    height: 16px;
+    width: 110px;
+    overflow: hidden;
+}
+
+.gojek {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.ratingsAndPrice {
+    display: flex;
+    width: 288px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.ratings {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.ratings img {
+    width: 90px;
+    height: 18px;
+}
+
+.ratingNumbers {
+    font-size: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+}
+
+.productPrice {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3ECF4C;
+}
+
+.newsLetterBanner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/newsLetterBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    border-radius: 4px;
+}
+
+.newsLetterBanner::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000000CC;
+    border-radius: 4px;
+}
+
+.newsLetterContainer {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 48px 20px;
+    z-index: 1;
+    align-items: center;
+}
+
+.newsLetterContainer h3 {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #C1C2C4;
+    margin-bottom: 4px;
+}
+
+.newsLetterDescription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.newsLetterDescription h2 {
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.newsLetterDescription p {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #F4F5FA;
+}
+
+.newsLetterInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.emailInput {
+    position: relative;
+    display: flex;
+}
+
+.emailForm {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    ;
+}
+
+.emailButton {
+    display: none;
+}
+
+.bttn-subscribe {
+    font-size: 1.4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #FFBD3A;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0 10px 0;
+}
+
+.bttn-subscribe:hover {
+    background-color: #b3811c;
+}
+
+.bttn-subscribe:active {
+    background-color: #FFBD3A;
+}
+
+footer {
+    width: 360px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerWrapper {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.footerLogoAndAddress {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footerLogo {
+    width: 170px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.footerHeader {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.footerAddress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.footerAddress h3 {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.footerAddress a {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.footerMenus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.footerOptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.footerOptions span {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.footerLinks {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+    cursor: pointer;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    color: #3A35411F;
+}
+
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.socialWrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.footerIcons a {
+    border: 1px solid #222325;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconLinks img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin: 8px;
+}
+
+.footerSocial span {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        width: 100vw;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    .logo {
+        margin-left: 120px;
+    }
+
+    .navMenu {
+        visibility: hidden;
+        display: none;
+    }
+
+    .navAvatar {
+        visibility: visible;
+        display: flex;
+        margin-right: 120px;
+    }
+
+    main {
+        width: 1200px;
+        margin: 64px auto 64px auto;
+    }
+
+    .heroBanner {
+        margin-bottom: 64px;
+    }
+
+    .heroText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 920px;
+        margin: 68.5px auto 50.5px auto;
+    }
+
+    .heroText h2 {
+        font-size: 4.8rem;
+    }
+
+    .heroText p {
+        font-size: 1.6rem;
+    }
+
+    .heroButton {
+        width: 369px;
+        font-size: 1.6rem;
+    }
+
+    .catalog {
+        margin-bottom: 64px;
+    }
+
+    .catalogHeader {
+        margin-bottom: 32px;
+    }
+
+    .catalogHeader h2 {
+        font-size: 3.2rem;
+    }
+
+    .catalogHeader p {
+        font-size: 1.6rem;
+    }
+
+    .catalogFilterContainer {
+        height: 52px;
+    }
+
+    .catalogFilterSelected span,
+    .catalogFilter span {
+        font-size: 1.6rem;
+    }
+
+    .catalogCardContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .catalogCard {
+        width: 384px;
+        height: 426px;
+        justify-content: center;
+    }
+
+    .imageAndDescription {
+        flex-direction: column;
+        width: 344px;
+        gap: 16px;
+    }
+
+    .productImage {
+        width: 344px;
+        height: 193px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .productDescription {
+        width: 344px;
+        gap: 16px;
+    }
+
+    .productNameAndDescription {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .productName {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        display: -webkit-box;
+        height: 44px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .teacherContainer {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .teacherImage {
+        width: 40px;
+        height: 40px;
+    }
+
+    .teacherInfo {
+        width: auto;
+    }
+
+    .teacherName {
+        font-size: 1.6rem;
+    }
+
+    .teacherExperience {
+        font-size: 1.4rem;
+        width: auto;
+        height: auto;
+    }
+
+    .ratingsAndPrice {
+        width: 344px;
+        margin-bottom: 20px;
+    }
+
+    .ratings {
+        width: 90px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    .ratingNumbers {
+        font-size: 1.4rem;
+    }
+
+    .productPrice {
+        font-size: 2.4rem;
+    }
+
+    .newsLetterContainer {
+        width: 525px;
+        margin: 92px auto;
+    }
+
+    .newsLetterContainer h3 {
+        font-size: 1.8rem;
+    }
+
+    .newsLetterDescription h2 {
+        font-size: 3.2rem;
+    }
+
+    .newsLetterDescription p {
+        font-size: 1.6rem;
+    }
+
+    .emailInput {
+        height: 58px;
+        width: 100%;
+    }
+
+    .emailForm {
+        font-size: 1.6rem;
+        text-align: start;
+        padding-left: 32px;
+    }
+
+    .emailButton {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.6rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        background-color: #FFBD3A;
+        padding: 10px 26px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .emailButton:hover {
+        background-color: #b28427;
+    }
+
+    .emailButton:active {
+        background-color: #FFBD3A;
+    }
+
+    .bttn-subscribe {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .footerWrapper {
+        width: 1200px;
+        margin: 0;
+    }
+
+    .footerContainer {
+        margin: 60px auto 52px auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerLogoAndAddress {
+        width: 352px;
+    }
+
+    .footerLogo {
+        width: 204px;
+        height: 56px;
+        object-fit: contain;
+    }
+
+    .footerInfo {
+        gap: 12px;
+    }
+
+    .footerHeader {
+        font-size: 1.8rem;
+    }
+
+    .footerAddress {
+        gap: 12px;
+    }
+
+    .footerAddress h3 {
+        font-size: 1.6rem;
+    }
+
+    .footerAddress a {
+        font-size: 1.6rem;
+    }
+
+    .footerMenus {
+        width: 546px;
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    .footerOptions {
+        width: 150px;
+        flex-direction: column;
+        justify-content: start;
+        gap: 15px;
+        cursor: default;
+    }
+
+    .footerOptions {
+        font-size: 1.6rem;
+    }
+
+    .footerOptions img {
+        display: none;
+    }
+
+    .footerLinks {
+        display: flex;
+    }
+
+    .footerSocial {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .iconLinks img {
+        margin: 6.5px;
+    }
+
+}
